@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'MNChiangSaenLi';
+    src: url(font/MN\ ChiangSaen\ Li\ v3.2.1.ttf);
+  }
+div nav{
+    height: 90px;
+  
+}nav a{
+    font-family:MNChiangSaenLi;
+    font-weight: bold;
+    color: #444;
+}div #bar{
+  margin: 0 auto;
+}
