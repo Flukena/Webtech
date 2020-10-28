@@ -6,12 +6,12 @@ div nav{
     height: auto;
 
   
-}nav a {
-    font-family:'MNChiangSaenLi';
-    font-weight: bold;
-    font-size:16px;
-    color: rgba(0, 0, 0, 0.075);
-}.dropdown-item{
+}*{
+  font-family:'MNChiangSaenLi';
+  font-weight: bold;
+  font-size:16px;
+}
+.dropdown-item{
   font-family:'MNChiangSaenLi';
     font-weight: bold;
     
@@ -19,8 +19,8 @@ div nav{
 div #bar{
   margin: 0 auto;
 }
-div #header .navigation-menu {
-  width: calc(100% - 90px - 20px);
+div #header .navbar-nav {
+  width: calc(100% - 90px + 20px);
 }div #header.fixed {
   position: fixed;
   top: 0;
@@ -56,24 +56,6 @@ div #header .navigation-menu {
   }
 }div{
   display:block;
-}.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 0.9rem;
-  color: #111111;
-  text-align: left;
-  list-style: none;
-  background-color: #f8f8f8;
-  background-clip: padding-box;
-  border: 1px solid rgba(78, 78, 78, 0.15);
-  border-radius: 0.25rem;
 }.align-items-center {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
@@ -92,9 +74,42 @@ div #header .navigation-menu {
 }.d-none {
   display: none !important;
 }
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ color: #fff;  }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 360px;
+  padding: 12px 16px;
+  z-index: 1;
+  border-top:0.5px solid rgba(0, 143, 36, 0.849) ;
+}.dropdown {
+  position: relative;
+  display: inline-block;
+}.dropdown:hover .dropdown-content {
+  display: block;
+}.btn{
+  position: absolute;
+  right: 0;
+}
+@media (max-width:700px) { 
+  .navigation-logo{
+    left: 0;
+    position: absolute;
+  }
+}
+.img-list{
+  width: 60px;
+}ul{
+  list-style: none;
+  padding-left: 0;
+}li{
+  color: #919191;
+  font-weight: 100;
+  
+}li:hover{
+  color:#4ecf6e;
+}li.nav-item:hover{
+  color:#4ecf6e;
+
 }
