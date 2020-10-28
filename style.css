@@ -3,12 +3,98 @@
     src: url(font/MN\ ChiangSaen\ Li\ v3.2.1.ttf);
   }
 div nav{
-    height: 90px;
+    height: auto;
+
   
-}nav a{
-    font-family:MNChiangSaenLi;
+}nav a {
+    font-family:'MNChiangSaenLi';
     font-weight: bold;
-    color: #444;
-}div #bar{
+    font-size:16px;
+    color: rgba(0, 0, 0, 0.075);
+}.dropdown-item{
+  font-family:'MNChiangSaenLi';
+    font-weight: bold;
+    
+}
+div #bar{
   margin: 0 auto;
+}
+div #header .navigation-menu {
+  width: calc(100% - 90px - 20px);
+}div #header.fixed {
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0px 24px 60px -14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 24px 60px -14px rgba(0, 0, 0, 0.1);
+}div #header .header .navigation-menu .menu {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+}div #header .fixed {
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0px 24px 60px -14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 24px 60px -14px rgba(0, 0, 0, 0.1);
+}@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+}div{
+  display:block;
+}.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 0.9rem;
+  color: #111111;
+  text-align: left;
+  list-style: none;
+  background-color: #f8f8f8;
+  background-clip: padding-box;
+  border: 1px solid rgba(78, 78, 78, 0.15);
+  border-radius: 0.25rem;
+}.align-items-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}.flex-wrap {
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}.justify-content-between {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}  .d-md-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}.d-none {
+  display: none !important;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
