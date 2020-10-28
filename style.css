@@ -2,14 +2,12 @@
     font-family: 'MNChiangSaenLi';
     src: url(font/MN\ ChiangSaen\ Li\ v3.2.1.ttf);
   }
-div nav{
-    height: auto;
-
-  
-}*{
+*{
   font-family:'MNChiangSaenLi';
   font-weight: bold;
-  font-size:16px;
+  font-size:20px;
+}body{
+  background-color: gray;
 }
 .dropdown-item{
   font-family:'MNChiangSaenLi';
@@ -18,9 +16,12 @@ div nav{
 }
 div #bar{
   margin: 0 auto;
+}#header{
+  min-height: 90px;
+  position: relative;
 }
 div #header .navbar-nav {
-  width: calc(100% - 90px + 20px);
+  width: calc(100% + 20px);
 }div #header.fixed {
   position: fixed;
   top: 0;
@@ -96,6 +97,7 @@ div #header .navbar-nav {
   .navigation-logo{
     left: 0;
     position: absolute;
+    margin-top: 10px;
   }
 }
 .img-list{
@@ -112,4 +114,9 @@ div #header .navbar-nav {
 }li.nav-item:hover{
   color:#4ecf6e;
 
+}p:hover{
+  color: #4ecf6e;
+}
+.navbar-nav{
+  margin-top: 10px;
 }
