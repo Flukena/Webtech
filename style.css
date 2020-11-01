@@ -173,7 +173,6 @@ padding-bottom: 0px;
 #dots.active{
   background-color: #8fc14e;
 }
-<<<<<<< HEAD
 .cover .font-new .bg-font {
   background-image: src="(img/CONTACTUS/contact-us-new.png)";
   padding: 9px 6%;
@@ -182,7 +181,6 @@ padding-bottom: 0px;
   background: linear-gradient(90deg, #8fc14e 0%, rgba(143, 193, 78, 0.674107) 43%, rgba(255, 255, 255, 0) 100%);
 }
  
-=======
 
 div .owl-theme .owl-nav {
   position: absolute;
@@ -225,4 +223,3 @@ div .owl-theme .owl-nav button.owl-next i {
   color: #acacac;
   font-size: 14px;
 }
->>>>>>> 735db707ce87436b8f0e06d369f1f062d4064876
