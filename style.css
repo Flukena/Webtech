@@ -211,7 +211,7 @@ div .owl-theme .owl-nav button.owl-next {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 12px 15px !important;
+  padding: 15px 15px !important;
   background: #eee;
   border-radius: 100px;
   -webkit-transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
