@@ -25,6 +25,43 @@
     <script src="owl.carousel.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="https://www.fnthaidairies.com/images/favicon.png">
     <style>
+        .tab {
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0px 12px;
+  
+  border-top: none;
+}
         .h2{
             color: green;
         }
@@ -304,6 +341,67 @@
             </div>
         </div>
       </div>
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'teapotex')" id="defaultOpen">ทีพอทเอ็กซ์ตร้าครีมเทียมพร่องไขมัน</button>
+        <button class="tablinks" onclick="openCity(event, 'teapotmm')">ทีพอทครีมเทียมข้นหวานชนิดพร่องมันเนย</button>
+        <button class="tablinks" onclick="openCity(event, 'teapotmilk')">ทีพอทนมข้นหวาน สูตรนมสด</button>
+      </div>
+    <div class="container"> 
+      <div id="teapotex" class="tabcontent">
+     
+          <img src="img/PRODUCT/TEAPOT/ครีมเทียมพร่องมันเนย.png" style="height: 180px;" >
+       
+    
+        <h3>ครีมเทียมพร่องไขมัน สำหรับอาหารและเบเกอรีตราทีพอท เอ็กซ์ตร้า</h3>
+        <p>ให้รสชาติหอมมัน กลมกล่อม อร่อยเข้มข้นกว่านมสดทั่วไป มีสีขาวนวลชวนลิ้มลองทำให้เครื่องดื่มและอาหารจานโปรดของคุณอร่อย กลมกล่อมยิ่งขึ้นเนื้อครีมเข้มข้นจึงสามารถใช้ในปริมาณที่น้อยกว่านมสดทั่วไป ประมาณ 25-50% ของปริมาณที่เคยใช้
+    
+          เหมาะสำหรับผู้ประกอบการ ธุรกิจ เครื่องดื่ม เบเกอรี่และร้านอาหารที่ต้องการผลิตภัณฑ์คุณภาพในราคาคุ้มค่า</p>
+       
+    
+      </div>
+      
+      <div id="teapotmm" class="tabcontent">
+        <h3>ครีมเทียมข้นหวาน ชนิดพร่องไขมัน ตราทีพอท </h3>
+        <p>ช่วยเพิ่มรสชาติและความเข้มข้น หวานมันให้กับเครื่องดื่มไม่ว่าจะเป็นเครื่องดื่มประเภทร้อนหรือเย็น สามารถใช้ทาขนมปัง จิ้มปาท่องโก๋ หรือจะราดหน้าโรตี ก็เพิ่มความอร่อยได้อย่างลงตัว 
+          มีความคุ้มค่ามากกว่าทำให้ช่วยประหยัดต้นทุน ให้ผู้ประกอบการทั่วไป และร้านค้ารถเข็น จึงสามารถช่วยเพิ่มผลกำไรในการดำเนินธุรกิจได้เป็นอย่างดี
+          ขนาดใหม่ !!  ทีพอท ข้นหวาน ชนิดถุง 500 กรัม
+          คุ้มค่ากว่าเดิมตัดใช้ง่าย เทสะดวก พร้อมประหยัดต้นทุน</p> 
+      </div>
+      
+      <div id="teapotmilk" class="tabcontent">
+        <h3>ทีพอทนมข้นหวาน สูตรนมสด แบบหลอดบีบ</h3>
+        <p>นมข้นหวานสูตรนมสด หลอดบีบ เจ้าแรกในประเทศไทย มีถึง 3 รสชาติด้วยกัน ช่วยเพิ่มความหอมอร่อย หวาน มัน ให้กับเครื่องดื่มและเมนูขนมหวานจานโปรด ด้วยส่วนผสมของนมจากแหล่งต้นกำเนิดชั้นเยี่ยมจากประเทศนิวซีแลนด์
+     
+          สูตรนมสด รสมะม่วง ครั้งแรกกับนมข้นหวานสูตรนมสด รสมะม่วง แตกต่าง ไม่เหมือนใครเพราะมีส่วนผสมของผงมะม่วงชั้นดี ได้รสกลมกล่อม หอม หวานรสมะม่วงแท้ๆ
+           
+          สูตรนมสด อร่อย หอมมัน นมสด ด้วยนมคุณภาพจากนิวซีแลนด์
+          
+          สูตรนมสด รสช็อกโกแลต  เข้มข้น หอมมัน อร่อยกับส่วนผสมที่ลงตัว ของนมจากแหล่งต้นกำเนิดชั้นเยี่ยมจากประเทศนิวซีแลนด์ กับ ช็อกโกแลตแท้ ๆ ที่ช่วยเพิ่มรสชาติและความหอมอร่อย หวาน มัน เข้มข้นให้กับเครื่องดื่มและเมนูขนมหวานจานโปรด
+          สูตรคาราเมล ทีพอทสูตรนมสด กลิ่นคาราเมล นมข้นหวานคาราเมลเจ้าแรกในประเทศไทย อร่อยละลาย หอมหวานละมุน เต็มรสคาราเมล กินง่าย กินได้กับทุกอย่าง ทั้งเมนูเครื่องดื่มและเมนูขนมหวานจานโปรด
+          สูตรมัทฉะชาเขียว  ครั้งแรกที่มีการผสานผงชาเขียวแท้ๆ จากเมืองไอจิ ประเทศญี่ปุ่น กับนมข้นหวานสูตรนมสดคุณภาพ ให้คุณอร่อยหอมหวานเต็มรสมัทฉะชาเขียวแท้</p>
+      </div>
+    </div>
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      
+    
+      document.getElementById("defaultOpen").click();
+      </script>
+
+
       <div class="container">
         <h1 class="title">
             <span style="color: #8fc14e;">Shop</span>
