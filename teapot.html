@@ -64,13 +64,9 @@ color:  #4e4e4e;
         .h2{
             color: green;
         }
-        
-         #shoplogo{
-         
-            border-radius: 100%;
+        .card-body{
             
-
-         }
+        }
          .img{
             margin-left: auto;
              margin-right: auto;
@@ -333,7 +329,7 @@ color:  #4e4e4e;
     </div>
     <div class="content">
         <div class="row justify-content-center align-items-center flex-md-row flex-column mt-3">
-                <img class="img-fluid" src="img/PRODUCT/TEAPOT/teapotLOGO.png" style="height: 92px"style>
+                <img class="img-fluid" src="img/PRODUCT/TEAPOT/teapotLOGO.png" style="height: 92px">
             <div class="title text-center text-sm-left px-3 py-0">
                 <h1 class="m-0 text-bold"><span style="color: #4e4e4e;">TEAPOT</span></h1>
                 <h3 class="m-0"><span style="color: #4e4e4e;">ทีพอท อร่อยล้น... เข้มข้นทุกเมนู</span></h3>
@@ -342,47 +338,120 @@ color:  #4e4e4e;
       </div>
 
       <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'teapotex')" id="defaultOpen">ทีพอทเอ็กซ์ตร้าครีมเทียมพร่องไขมัน</button>
-        <button class="tablinks" onclick="openCity(event, 'teapotmm')">ทีพอทครีมเทียมข้นหวานชนิดพร่องมันเนย</button>
-        <button class="tablinks" onclick="openCity(event, 'teapotmilk')">ทีพอทนมข้นหวาน สูตรนมสด</button>
+        <button class="tablinks text-center col-lg-3  col-sm-3 col-xs" onclick="showtab(event, 'teapotex')" id="defaultOpen">ทีพอทเอ็กซ์ตร้าครีมเทียมพร่องไขมัน</button>
+        <button class="tablinks text-center col-lg-3  col-sm-3 col-xs" onclick="showtab(event, 'teapotmm')">ทีพอทครีมเทียมข้นหวานชนิดพร่องมันเนย</button>
+        <button class="tablinks text-center col-lg-3  col-sm-3 col-xs" onclick="showtab(event, 'teapotmilk')">ทีพอทนมข้นหวาน สูตรนมสด</button>
       </div>
     <div class="container"> 
-      <div id="teapotex" class="tabcontent">
+        
+            <div id="teapotex" class="tabcontent w3-animate-opacity">
      
-          <img src="img/PRODUCT/TEAPOT/ครีมเทียมพร่องมันเนย.png" style="height: 180px;" >
-       
-    
-        <h3>ครีมเทียมพร่องไขมัน สำหรับอาหารและเบเกอรีตราทีพอท เอ็กซ์ตร้า</h3>
-        <p>ให้รสชาติหอมมัน กลมกล่อม อร่อยเข้มข้นกว่านมสดทั่วไป มีสีขาวนวลชวนลิ้มลองทำให้เครื่องดื่มและอาหารจานโปรดของคุณอร่อย กลมกล่อมยิ่งขึ้นเนื้อครีมเข้มข้นจึงสามารถใช้ในปริมาณที่น้อยกว่านมสดทั่วไป ประมาณ 25-50% ของปริมาณที่เคยใช้
-    
-          เหมาะสำหรับผู้ประกอบการ ธุรกิจ เครื่องดื่ม เบเกอรี่และร้านอาหารที่ต้องการผลิตภัณฑ์คุณภาพในราคาคุ้มค่า</p>
-       
-    
-      </div>
-      
-      <div id="teapotmm" class="tabcontent">
-        <h3>ครีมเทียมข้นหวาน ชนิดพร่องไขมัน ตราทีพอท </h3>
-        <p>ช่วยเพิ่มรสชาติและความเข้มข้น หวานมันให้กับเครื่องดื่มไม่ว่าจะเป็นเครื่องดื่มประเภทร้อนหรือเย็น สามารถใช้ทาขนมปัง จิ้มปาท่องโก๋ หรือจะราดหน้าโรตี ก็เพิ่มความอร่อยได้อย่างลงตัว 
-          มีความคุ้มค่ามากกว่าทำให้ช่วยประหยัดต้นทุน ให้ผู้ประกอบการทั่วไป และร้านค้ารถเข็น จึงสามารถช่วยเพิ่มผลกำไรในการดำเนินธุรกิจได้เป็นอย่างดี
-          ขนาดใหม่ !!  ทีพอท ข้นหวาน ชนิดถุง 500 กรัม
-          คุ้มค่ากว่าเดิมตัดใช้ง่าย เทสะดวก พร้อมประหยัดต้นทุน</p> 
-      </div>
-      
-      <div id="teapotmilk" class="tabcontent">
-        <h3>ทีพอทนมข้นหวาน สูตรนมสด แบบหลอดบีบ</h3>
-        <p>นมข้นหวานสูตรนมสด หลอดบีบ เจ้าแรกในประเทศไทย มีถึง 3 รสชาติด้วยกัน ช่วยเพิ่มความหอมอร่อย หวาน มัน ให้กับเครื่องดื่มและเมนูขนมหวานจานโปรด ด้วยส่วนผสมของนมจากแหล่งต้นกำเนิดชั้นเยี่ยมจากประเทศนิวซีแลนด์
-     
-          สูตรนมสด รสมะม่วง ครั้งแรกกับนมข้นหวานสูตรนมสด รสมะม่วง แตกต่าง ไม่เหมือนใครเพราะมีส่วนผสมของผงมะม่วงชั้นดี ได้รสกลมกล่อม หอม หวานรสมะม่วงแท้ๆ
-           
-          สูตรนมสด อร่อย หอมมัน นมสด ด้วยนมคุณภาพจากนิวซีแลนด์
+                <div class="row">
+                    <div class="col-sm-12 col-md-5">
+                        <img class="img-fluid" src="img/PRODUCT/TEAPOT/ครีมเทียมพร่องไขมัน.png" style="height: 100%" style="width:100%;">
+                    </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="title text-sm-left px-3 py-0">
+                            <br>
+                            <br>
+                            <h3 class="m-0 text-bold"><span style="color: black;">ครีมเทียมพร่องไขมัน สำหรับอาหารและเบเกอรีตราทีพอท เอ็กซ์ตร้า</span></h3>
+                            <br>
+                            
+                            <h3 class="m-0"><span style="color: #4e4e4e;">ให้รสชาติหอมมัน กลมกล่อม อร่อยเข้มข้นกว่านมสดทั่วไป มีสีขาวนวลชวนลิ้มลองทำให้เครื่องดื่มและอาหารจานโปรดของคุณอร่อย กลมกล่อมยิ่งขึ้นเนื้อครีมเข้มข้นจึงสามารถใช้ในปริมาณที่น้อยกว่านมสดทั่วไป ประมาณ 25-50% ของปริมาณที่เคยใช้
+                                <br>
+                                <br>
+                                เหมาะสำหรับผู้ประกอบการ ธุรกิจ เครื่องดื่ม เบเกอรี่และร้านอาหารที่ต้องการผลิตภัณฑ์คุณภาพในราคาคุ้มค่า</span></h3>
+                        </div>
+                    </div>
+                    
+                  </div> 
+                  <div class="row">
+                    <span style="color: #4e4e4e;"><a href="teapot.html"><h6># TEAPOT,</h6></a></span>
+                    <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>ทีพอท</h6></a></span>
+                  </div>
+    </div>
+    </div>
+    <div class="container"> 
+        
+        <div id="teapotmm" class="tabcontent w3-animate-opacity">
+ 
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <img class="img-fluid" src="img/PRODUCT/TEAPOT/ครีมเทียมพร่องมันเนย.png" style="height: 500px">
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="title text-sm-left px-3 py-0">
+                        <br>
+                        <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">ครีมเทียมข้นหวาน ชนิดพร่องไขมัน ตราทีพอท</span></h3>
+                        <br>
+                        
+                        <h3 class="m-0"><span style="color: #4e4e4e;">ช่วยเพิ่มรสชาติและความเข้มข้น หวานมันให้กับเครื่องดื่มไม่ว่าจะเป็นเครื่องดื่มประเภทร้อนหรือเย็น สามารถใช้ทาขนมปัง จิ้มปาท่องโก๋ หรือจะราดหน้าโรตี ก็เพิ่มความอร่อยได้อย่างลงตัว 
+                            มีความคุ้มค่ามากกว่าทำให้ช่วยประหยัดต้นทุน ให้ผู้ประกอบการทั่วไป และร้านค้ารถเข็น จึงสามารถช่วยเพิ่มผลกำไรในการดำเนินธุรกิจได้เป็นอย่างดี
+                            <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">ขนาดใหม่ !!  ทีพอท ข้นหวาน ชนิดถุง 500 กรัม</span></h3>
+                        <br>
+                        <h3 class="m-0"><span style="color: #4e4e4e;"> คุ้มค่ากว่าเดิมตัดใช้ง่าย เทสะดวก พร้อมประหยัดต้นทุน</span></h3>
+                            
+                    </div>
+                </div>
+                
+              </div> 
+              <div class="row">
+                <span style="color: #4e4e4e;"><a href="teapot.html"><h6># TEAPOT,</h6></a></span>
+                <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>ทีพอท</h6></a></span>
+                <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>,ครีมเทียมข้นหวาน</h6></a></span>
+               
+              </div>
+    </div>
+    </div>
+    <div class="container"> 
+        
+        <div id="teapotmilk" class="tabcontent w3-animate-opacity">
+ 
+            <div class="row">
+                <div class="col-sm-12 col-md-5">
+                    <br>
+                    <img class="img-fluid" src="img/PRODUCT/TEAPOT/นมข้นหวานนมสด.jpg" style="height: 350px">
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="title text-sm-left px-3 py-0">
+                        <br>
+                        <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">ทีพอทนมข้นหวาน สูตรนมสด แบบหลอดบีบ</span></h3>
+                        <br>
+                        
+                        <h3 class="m-0"><span style="color: #4e4e4e;">นมข้นหวานสูตรนมสด หลอดบีบ เจ้าแรกในประเทศไทย มีถึง 3 รสชาติด้วยกัน ช่วยเพิ่มความหอมอร่อย หวาน มัน ให้กับเครื่องดื่มและเมนูขนมหวานจานโปรด ด้วยส่วนผสมของนมจากแหล่งต้นกำเนิดชั้นเยี่ยมจากประเทศนิวซีแลนด์</span></h3>
+                            <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">สูตรนมสด รสมะม่วง</span><span style="color: #4e4e4e;"> ครั้งแรกกับนมข้นหวานสูตรนมสด รสมะม่วง แตกต่าง ไม่เหมือนใครเพราะมีส่วนผสมของผงมะม่วงชั้นดี ได้รสกลมกล่อม หอม หวานรสมะม่วงแท้ๆ</span></h3>
+                        <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">สูตรนมสด</span><span style="color: #4e4e4e;"> อร่อย หอมมัน นมสด ด้วยนมคุณภาพจากนิวซีแลนด์</span></h3> 
+                        <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">สูตรนมสด รสช็อกโกแลต</span><span style="color: #4e4e4e;">  เข้มข้น หอมมัน อร่อยกับส่วนผสมที่ลงตัว ของนมจากแหล่งต้นกำเนิดชั้นเยี่ยมจากประเทศนิวซีแลนด์ กับ ช็อกโกแลตแท้ ๆ ที่ช่วยเพิ่มรสชาติและความหอมอร่อย หวาน มัน เข้มข้นให้กับเครื่องดื่มและเมนูขนมหวานจานโปรด</span></h3> 
+                        <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">สูตรคาราเมล</span><span style="color: #4e4e4e;"> ทีพอทสูตรนมสด กลิ่นคาราเมล นมข้นหวานคาราเมลเจ้าแรกในประเทศไทย อร่อยละลาย หอมหวานละมุน เต็มรสคาราเมล กินง่าย กินได้กับทุกอย่าง ทั้งเมนูเครื่องดื่มและเมนูขนมหวานจานโปรด</span></h3> 
+                        <br>
+                        <h3 class="m-0 text-bold"><span style="color: black;">สูตรมัทฉะชาเขียว</span><span style="color: #4e4e4e;">  ครั้งแรกที่มีการผสานผงชาเขียวแท้ๆ จากเมืองไอจิ ประเทศญี่ปุ่น กับนมข้นหวานสูตรนมสดคุณภาพ ให้คุณอร่อยหอมหวานเต็มรสมัทฉะชาเขียวแท้</span></h3> 
+                   
+                    </div>
+                </div>
+                
+              </div> 
+              <div class="row">
+                <span style="color: #4e4e4e;"><a href="teapot.html"><h6># TEAPOT,</h6></a></span>
+                <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>ทีพอท</h6></a></span>
+                <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>,ครีมเทียมข้นหวาน</h6></a></span>
+                <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>,นมข้นหวานทีพอท</h6></a></span>
+                <span style="color: #4e4e4e;"> <a href="teapot.html"><h6>,นมข้นหวานทีพอท หลอดบีบ </h6></a></span>
           
-          สูตรนมสด รสช็อกโกแลต  เข้มข้น หอมมัน อร่อยกับส่วนผสมที่ลงตัว ของนมจากแหล่งต้นกำเนิดชั้นเยี่ยมจากประเทศนิวซีแลนด์ กับ ช็อกโกแลตแท้ ๆ ที่ช่วยเพิ่มรสชาติและความหอมอร่อย หวาน มัน เข้มข้นให้กับเครื่องดื่มและเมนูขนมหวานจานโปรด
-          สูตรคาราเมล ทีพอทสูตรนมสด กลิ่นคาราเมล นมข้นหวานคาราเมลเจ้าแรกในประเทศไทย อร่อยละลาย หอมหวานละมุน เต็มรสคาราเมล กินง่าย กินได้กับทุกอย่าง ทั้งเมนูเครื่องดื่มและเมนูขนมหวานจานโปรด
-          สูตรมัทฉะชาเขียว  ครั้งแรกที่มีการผสานผงชาเขียวแท้ๆ จากเมืองไอจิ ประเทศญี่ปุ่น กับนมข้นหวานสูตรนมสดคุณภาพ ให้คุณอร่อยหอมหวานเต็มรสมัทฉะชาเขียวแท้</p>
-      </div>
+              </div>
+    </div>
+    </div>
+      
+    
     </div>
       <script>
-      function openCity(evt, cityName) {
+      function showtab(evt, tabname) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -392,7 +461,7 @@ color:  #4e4e4e;
         for (i = 0; i < tablinks.length; i++) {
           tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(tabname).style.display = "block";
         evt.currentTarget.className += " active";
       }
       
@@ -409,11 +478,11 @@ color:  #4e4e4e;
     
         <div class="row">
           
-          <div class="col-sm-2">
+          <div class="col-sm-3 col-lg-2">
              
             <img src="img/PRODUCT/TEAPOT/teapotLOGObigbig.png" style="height: 160px"style>
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-3 col-lg-2">
             <br>
             <br>
             <br>
@@ -421,50 +490,18 @@ color:  #4e4e4e;
 
           </div>
           
-          <div class="col-sm-7">
-              <div class="row">
-                  <div class="col-sm-2 card img-center" id="shoplogo">
-                <a class="nav-link" href="https://shoponline.tescolotus.com/groceries/th-TH/search?query=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
-                  <img src="img/PRODUCT/TEAPOT/lotus.png" style="height: 80px;" alt="Avatar" >
-                </a>
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" id="shoplogo">
-                <a class="nav-link" href="https://www.bigc.co.th/search?q=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97&fbclid=IwAR2_JaFFYwa-69N5tOSJ-tceGjEQe4XD1D78bkLFR1l3h926r1KIj4b2Gv4">
-                    <img src="img/PRODUCT/TEAPOT/bigC.png" style="height: 80px;" alt="Avatar" >
-                  </a></div>
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-2 card" id="shoplogo">
-                  <a class="nav-link" href="https://www.tops.co.th/th/search/%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
-                    <img src="img/PRODUCT/TEAPOT/Tops.png" style="height: 80px;" alt="Avatar" >
-                  </a></div>
-                  <div class="col-sm-1"></div>
-                  <div class="col-sm-2 card" id="shoplogo">
-                  <a class="nav-link" href="https://www.lazada.co.th/catalog/?q=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97&_keyori=ss&m=redmart&from=input&spm=a2o4m.lazmart_search.search.go.120e71c9iR5h8j">
-                    <img src="img/PRODUCT/TEAPOT/Lazada.png" style="height: 80px;" alt="Avatar" >
-                  </a></div>
-              </div>
-              <div class="row"></div>
+        <div class="col-sm-12 col-lg-8">
+              <div class="container">
                 <div class="row">
-                    <div class="col-sm-2 card" id="shoplogo">
-                    <a class="nav-link" href="https://www.makroclick.com/th/search-results/?keyword=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
-                      <img src="img/PRODUCT/TEAPOT/makro.png" style="height: 80px;" alt="Avatar" >
-                    </a></div> 
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" id="shoplogo">
-                    <a class="nav-link" href="https://www.shopat24.com/brands/supermarket/%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97/?redirectQuery=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
-                      <img src="img/PRODUCT/TEAPOT/shop24.png" style="height: 80px;" alt="Avatar" >
-                    </a> </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-2 card" id="shoplogo">
-                    <a class="nav-link" href="https://www.wemall.com/search?q=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
-                      <img src="img/PRODUCT/TEAPOT/wemall.png" style="height: 80px;" alt="Avatar" >
-                    </a></div>
-                    
-              </div>
-              
-        </div>
-        
+                    <div class="col-sm-3 col-lg-3">
+                        <div class="card-body w3-circle" >
+                            <a class="nav-link  w3-card-2 w3-circle" href="https://shoponline.tescolotus.com/groceries/th-TH/search?query=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
+                                <img src="img/PRODUCT/TEAPOT/lotus.png" style="height:70px; width: 70px;">
+                              </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
       </div>
@@ -473,22 +510,80 @@ color:  #4e4e4e;
             <span style="color: #8fc14e;">TEAPOT</span>
             <span style="color: #4e4e4e;">New Release</span>
         </h1>
-        <div class="owl-carousel owl-theme mb-3 owl-loaded owl-drag">
+        <div id="two" class="owl-carousel owl-theme mb-3 owl-loaded owl-drag">
             <div class="owl-stage-outer">
-                <div class="owl-stage" style="transform: translate3d(-2260px, 0px, 0px); transition: all 0s ease 0s; width: 7534px;">
-                    <div class="owl-item">
-                        
-                        <img src="img/HOME/loop1.jpg">
+                <div class="owl-stage"
+                    style="transform: translate3d(-2260px, 0px, 0px); transition: all 0s ease 0s; width: 7534px;">
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/HOME/loop1.jpg">
+                        <h6 class="tag">
+                           News % Events
+                        </h6>
+                        <p class="description">
+                            รายชื่อผู้โชคดีจากกิจกรรม"ทีพอท ลด แลก แจกจุใจ"
+                        </p>
                     </div>
-                    <div class="owl-item"><img src="img/PRODUCT/TEAPOT/NewReleaseoนมเย็ฯ.jpg"></div>
-                    <div class="owl-item"><img src="img/PRODUCT/TEAPOT/NewReleaseกาเเฟฟองนม.jpg"></div>
-                    <div class="owl-item"><img src="img/PRODUCT/TEAPOT/NewReleaseกาเเฟเย็น.jpg"></div>
-                    <div class="owl-item"><img src="img/PRODUCT/TEAPOT/NewReleaseชาไทย.jpg"></div>
-                    <div class="owl-item"><img src="img/PRODUCT/TEAPOT/NewReleaseปังไส้ไหล.jpg"></div>
-                    <div class="owl-item"><img src="img/PRODUCT/TEAPOT/NewReleaseฟลุตสลัด.jpg"></div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/HOME/loop4.jpg">
+                        <h6 class="tag">
+                           News % Events
+                         </h6>
+                         <p class="description">
+                            รายชื่อผู้โชคดีจากกิจกรรม"ทีพอท แจกใหญ่ กำไรดี ทีพอท"
+                         </p>
                     </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/NewReleaseoนมเย็ฯ.jpg">
+                            <h6 class="tag">
+                                ทีพอทนมเย็น,ทีพอทชาเขียว,ทีพอทชาไทย
+                              </h6>
+                              
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/NewReleaseฟลุตสลัด.jpg">
+                            <h6 class="tag">
+                                เต้าฮวยนมสดฟรุ๊ตสลัด
+                              </h6>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/NewReleaseกาเเฟฟองนม.jpg">
+                            <h6 class="tag">
+                                กาแฟฟองนม
+                              </h6>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/spagetty.jpg">
+                            <h6 class="tag">
+                                สปาเกตตี้ต้มยำแห้ง
+                              </h6>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/NewReleaseชาไทย.jpg">
+                            <h6 class="tag">
+                                ทีพอทชาไทยไข่มุก
+                              </h6>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/NewReleaseปังไส้ไหล.jpg">
+                            <h6 class="tag">
+                                ขนมปังไส้ไหลไส้ใบเตย
+                              </h6>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/TEAPOT/NewReleaseกาเเฟเย็น.jpg">
+                            <h6 class="tag">
+                                กาแฟเย็นทีพอทซอสนม
+                              </h6>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #ef3239 solid;"><img class="img-fluid mb-2"
+                        src="img/PRODUCT/TEAPOT/kanompangchathai.jpg">
+                        <h6 class="tag">
+                            ขนมปังไส้ไหลไส้ชาไทย
+                          </h6>
+                </div>
                 </div>
             </div>
+        </div>
 
 
         </div>
@@ -503,6 +598,7 @@ color:  #4e4e4e;
                     rtl: false,
                     loop:true,
                     autoplay:true,
+                    
 
                     
                 });
