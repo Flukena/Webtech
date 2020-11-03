@@ -249,23 +249,187 @@
         </div>
     </div>
     <div style="background-color: white;">
-    <div class="container-fluid mt-5">
+        <div class="container-fluid mt-5">
             <div class=" tag tag-bar w-100">
                 <div class="row" style="justify-content: center;">
-                <div class="col-2">
-                <h2 class="bar-item ">Recipe</h2></div>
-                <div class="col-2">
-                <h2 class="bar-item">Nutrition & Tip</h2></div>
-                <div class="col-2">
-                <h2 class="bar-item">สูตรผู้ประกอบการ</h2></div>
-            </div>   </div></div>
-        <div class="row">
-
+                    <div class="col-2">
+                        <h2 class="bar-item ">Recipe</h2>
+                    </div>
+                    <div class="col-2">
+                        <h2 class="bar-item">Nutrition & Tip</h2>
+                    </div>
+                    <div class="col-2">
+                        <h2 class="bar-item">สูตรผู้ประกอบการ</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 30px;">
+            &nbsp;
         </div>
 
-    </div>
+        <div class="container">
+            <h1 class="title mb-4" style="justify-content: center; text-align: center;">
+                <span style="color: #4ecf6e;">สูตรอาหาร</span>
+                <span style="color: #4e4e4e;">ล่าสุด</span>
+            </h1>
+            <div id="one" class="owl-carousel owl-theme mb-3 owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-2260px, 0px, 0px); transition: all 0s ease 0s; width: 7534px;">
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop1.jpg">
 
+                            <p class="description new-de">
+                                ห่อหมกปลา
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop2.jpg">
+
+                            <p class="description new-de">
+                                ไข่คนเบคอนกรอบ
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop3.jpg">
+
+                            <p class="description new-de">
+                                จับแช สไปร์ซี่
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop4.jpg">
+
+                            <p class="description new-de">
+                                หมูบลูโกกิ
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop5.jpg">
+
+                            <p class="description new-de">
+                                ไก่ทอดซอสเกาหลี
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop6.jpg">
+
+                            <p class="description new-de">
+                                ไก่กรอบผู้พัน
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop7.jpg">
+
+                            <p class="description new-de">
+                                มันฝรั่งทอด
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop8.jpg">
+
+                            <p class="description new-de">
+                                คาร์เนชันทอด
+                            </p>
+                        </div>
+                        <div class="owl-item "><img class="img-fluid mb-2" src="img/HOME/foodloop9.jpg">
+
+                            <p class="description new-de">
+                                พริกทอดงากรอบ
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 40px;">
+            &nbsp;
+        </div>
+        <div class="container-fluid" style="border-bottom: 1px solid #eee;"></div>
+
+        <div class="container">
+            <h1 class="title mb-4" style="justify-content: center; text-align: center;">
+                <span style="color: #4ecf6e;">สูตร</span>
+                <span style="color: #4e4e4e;">อาหารคาว</span>
+            </h1>
+            <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <img class="img-food mb-2" src="img/Food/ฉู่ฉี่ปลา สูตรพิเศษจากคาร์เนชัน หอม มัน อร่อย.jpg" alt="">
+                <p class="description new-de">
+                    ฉู่ฉี่ปลา สูตรพิเศษจากคาร์เนชัน หอม มัน อร่อย
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img class="img-food mb-2" src="img/Food/พะแนงลาซานญ่า.jpg" alt="">
+                <p class="description new-de">
+                    พะแนงลาซานญ่า
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img class="img-food mb-2" src="img/Food/ไก่กอและ.png" alt="">
+                <p class="description new-de">
+                    ไก่กอและ
+                </p>
+            </div></div>
+
+        </div>
     </div>
+    <script>
+        $(document).ready(function () {
+            $("#one").owlCarousel({
+                item: 9,
+                margin: 30,
+                nav: true,
+                dots: true,
+                loop: true,
+
+                responsiveClass: true,
+                responsive: {
+
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        dots: false
+                    }, 600: {
+                        items: 1,
+                        nav: true,
+                        dots: false,
+                    }, 0: {
+                        items: 1,
+                        nav: false,
+                        dot: true,
+                    }
+                }
+
+            });
+            $("#one .owl-prev").html('<i style="  color: #acacac;  outline: none;" class="fa fa-chevron-left"></i>');
+            $("#one .owl-next").html('<i style=" color: #acacac;  outline: none;" class="fa fa-chevron-right"></i>');
+            // $("#two").owlCarousel({
+            //     item: 9,
+            //     margin: 30,
+            //     nav: true,
+            //     dots: true,
+            //     loop: true,
+
+            //     responsiveClass: true,
+            //     responsive: {
+
+            //         1000: {
+            //             items: 3,
+            //             nav: true,
+            //             dots: false
+            //         }, 600: {
+            //             items: 1,
+            //             nav: true,
+            //             dots: false,
+            //         }, 0: {
+            //             items: 1,
+            //             nav: false,
+            //             dot: true,
+            //         }
+            //     }
+
+            // });
+            // $("#two .owl-prev").html('<i style="  color: #acacac; font-size: 14px; outline: none;" class="fa fa-chevron-left"></i>');
+            // $("#two .owl-next").html('<i style=" color: #acacac; font-size: 14px; outline: none;" class="fa fa-chevron-right"></i>');
+
+        });
+
+    </script>
 </body>
 
 </html>
