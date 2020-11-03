@@ -253,8 +253,6 @@ div .head{
   display: flex !important;
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -272,8 +270,6 @@ font-weight: 500;
 font-size: 26px;
 font-weight: bold;
   display: inline-block;
-  margin-right: 50px;
-  margin-left: 50px;
 }.tag-bar{
   margin: 0 auto;
   text-align: center;
