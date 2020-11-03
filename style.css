@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'MNChiangSaenLi';
+  font-family: MNChiangSaenLi;
   src: url(font/MN\ ChiangSaen\ Li\ v3.2.1.ttf);
 }
 *{
@@ -10,13 +10,13 @@ font-weight: bold;
 background-color: gray;
 }
 .dropdown-item{
-font-family:'MNChiangSaenLi';
+font-family:MNChiangSaenLi;
   font-weight: bold;
   
 }
 div #bar{
 margin: 0 auto;
-max-height: 70px;
+max-height: 120px;
 }#header{
 position: relative;
 font-size:18px;
@@ -77,40 +77,6 @@ display: -ms-flexbox !important;
 display: flex !important;
 }.d-none {
 display: none !important;
-}h1,h2,h3,h4,h5,h6{
-  font-weight: 500;
-  line-height: 1.2;
-}h1, .h1 {
-  font-size:36px;
-}:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #ef3239;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #8fc14e;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #f8f8f8;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #8fc14e;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #ef3239;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Raleway", sans-serif;
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .dropdown-content {
@@ -130,12 +96,24 @@ display: block;
 }.btn{
 position: absolute;
 right: 0;
+}@media (max-width:870px){
+  .navigation-logo{
+    left: 0;
+    margin-top: 20px;
+  }
 }
 @media (max-width:768px) { 
 .navigation-logo{
   left: 0;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.justify-content-md-end {
+    -webkit-box-pack: end !important;
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important;
+}.head{
+  text-align: center;
 }
 }
 .img-list{
@@ -224,6 +202,7 @@ div .owl-theme .owl-nav button.owl-next i {
   font-size: 14px;
 }.tag{
   color: #acacac;
+  font-family: 'MNChiangSaenLi';
   line-height: 1.1 !important;
   font-size: 20px;
   font-weight: 400;
@@ -257,4 +236,59 @@ div .owl-theme .owl-nav button.owl-next i {
   -webkit-transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
   transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
   text-align: center !important;
+}.title{
+  line-height: 1.2;
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+
+  font-family: 'MNChiangSaenLi';
+
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'MNChiangSaenLi';
+    margin: 10px 0;
+}
+div .head{
+  display: flex !important;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+  z-index: 1;
+}*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}body{
+  text-align: center;
+}.bar-item{
+  font-family: 'MNChiangSaenLi';
+font-weight: 500;
+font-size: 26px;
+font-weight: bold;
+  display: inline-block;
+  margin-right: 50px;
+  margin-left: 50px;
+}.tag-bar{
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: white;
+  outline: none !important;
+}*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}.cover {
+  background-size: cover;
+  background-color: #f5f5f5 !important;
 }
