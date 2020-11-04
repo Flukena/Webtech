@@ -1,0 +1,581 @@
+
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F&N Dairies (Thailand) Limited</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+        <link rel="stylesheet" href="owl.carousel.min.css">
+        <link rel="stylesheet" href="owl.theme.default.min.css">
+    
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="owl.carousel.min.js"></script>
+        <link rel="shortcut icon" type="image/png" href="https://www.fnthaidairies.com/images/favicon.png">
+        <style>
+            
+        .tab {
+        color: #a39494;
+        text-align: center;
+        overflow: hidden;
+        border: 1px solid #ccc;
+      
+        }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+        color:  #a39494;
+      background-color: inherit;
+      float: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 23px;
+    }
+    
+    
+    
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+     color: #000;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 0px 12px;
+      
+      border-top: none;
+    }
+            .h2{
+                color: green;
+            }
+            
+             .img{
+                margin-left: auto;
+                 margin-right: auto;
+             }
+             .content {
+                 max-width: 1000px;
+                 margin: auto;
+                 background: white;
+                 padding: 10px;
+               }
+         </style>
+    </head>
+    
+    <body data-spy="scroll" data-target="" data-offset="50">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header" class="col-lg-12">
+                    <nav class="navbar navbar-expand-md  navbar-light fixed-top">
+                        <div class="d-md-flex flex-wrap align-items-center justify-content-between" id="bar">
+                            <div class="row" style="margin: 0 auto;">
+                                <div class="col-xs-6 navigation-logo">
+                                    <a class="navbar-brand " href="index.html"><img src="img/logo.png" alt=""
+                                            style="margin: 0 0; padding-bottom: 0px; margin-top: -20;"></a></div>
+                                <div class="col-xs-6 btn">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+    
+    
+                            <div class="navigation-menu position-relative align-items-center">
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav" style="margin-top: 15px; padding-bottom: 0px;">
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item">
+                                                <p>HOME</p>
+                                            </li>
+                                        </a>
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item">
+                                                <p>ABOUT US</p>
+                                            </li>
+                                        </a>
+                                        <li class="nav-link">
+                                            <div class="dropdown">
+                                                <p>PRODUCT</p>
+    
+                                                <div class="dropdown-content">
+                                                    <ul>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item">
+                                                                    <img class="img-list"
+                                                                        src="img/PRODUCT/TEAPOT/teapotLOGO.png" alt="">
+                                                                    TEAPOT</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Magnolia Plus Lactose/Logo.png"
+                                                                        alt="">MAGNOLIA PLUS LACTOSE FREE</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Magnolia Ginkgo/LOGO.png"
+                                                                        alt="">MAGNOLIA PULSS GINKGO</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Magnolia pasturize/logo.png"
+                                                                        alt="">MAGNOLIA PLUS PASTURIZED MLIK</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Magnolia Milkies/logo.png"
+                                                                        alt="">MAGNOLIA MILKIES</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+    
+                                                                <p class="item">
+                                                                <div class="row" style="margin-top: -40px;">
+                                                                    <div class="col-2"> <img class="img-list"
+                                                                            src="img/PRODUCT/Magnolia Gourmet/logo.png"
+                                                                            alt=""></div>
+                                                                    <div class="col-10">MAGNOLIA Gourmet WHIPPING CREAM &
+                                                                        HALF CREAM</div>
+                                                                </div>
+                                                                </p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Magnolia Chocolate/logo.png"
+                                                                        alt="">MAGNOLIA CHOCOLATE MALT MILK</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Magnolia Barista/logo.png"
+                                                                        alt="">MAGNOLIA BARISTA MILK</p>
+                                                            </li>
+                                                        </a>
+    
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/Carnation/logo.png" alt="">MAGNOLIA
+                                                                    CARNATION</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/BEAR BRAND Sterilized Milk/logo.png"
+                                                                        alt="">BRAR BRAND STERILIZED MILK</p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p class="item"><img class="img-list"
+                                                                        src="img/PRODUCT/BEAR BRAND GOLD/logo.png"
+                                                                        alt="">BRAR BRAND GOLD</p>
+                                                            </li>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+    
+                                        <li class="nav-link">
+    
+                                            <div class="dropdown">
+                                                <p>FOOD APPLICATION</p>
+                                                <div class="dropdown-content">
+                                                    <ul>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p style="padding-top: 10px;" class=""><i
+                                                                        class='fas fa-angle-right'
+                                                                        style='font-size:18px;'></i>
+                                                                <p style="margin-top: -40px;margin-left: 20px; "> RECIPE</p>
+                                                                </p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p style="padding-top: 10px;" class=""><i
+                                                                        class='fas fa-angle-right'
+                                                                        style='font-size:18px;'></i>
+                                                                <p style="margin-top: -40px;margin-left: 20px; "> NUTRITION
+                                                                    & TIP</p>
+                                                                </p>
+                                                            </li>
+                                                        </a>
+                                                        <a class="nav-link" href="#">
+                                                            <li>
+                                                                <p style="padding-top: 10px;" class=""><i
+                                                                        class='fas fa-angle-right'
+                                                                        style='font-size:18px;'></i>
+                                                                <p style="margin-top: -40px;margin-left: 20px; ">
+                                                                    สูตรผู้ประกอบการ</p>
+                                                                </p>
+                                                            </li>
+                                                        </a>
+                                                </div>
+                                        </li>
+                                        </a>
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item">
+                                                <p>SHOP ONLINE
+                                                </p>
+                                            </li>
+                                        </a>
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item">
+                                                <p class="menu-list">NEWS & EVENT</p>
+                                            </li>
+                                        </a>
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item">
+                                                <p class="menu-list">CAREER</p>
+                                            </li>
+                                        </a>
+    
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item">
+                                                <p>CONTACT US</p>
+                                            </li>
+                                        </a>
+    
+                                        <a class="nav-link" href="index.html">
+                                            <li class="nav-item" style="margin-top:-5px"><svg width="0.8em" height="0.8em"
+                                                    viewBox="0 0 16 16" class="bi bi-search mt-1" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                                    <path fill-rule="evenodd"
+                                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                                </svg></li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section id="first" style="height: 87px;">
+            &nbsp;
+        </section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/PRODUCT/Magnolia pasturize/slide1.png" alt="First slide">
+                </div>
+               
+            </div> 
+            
+        </div>
+        <div class="content">
+            <div class="row justify-content-center align-items-center flex-md-row flex-column mt-3">
+                    <img class="img-fluid" src="img/PRODUCT/Magnolia pasturize/logo.png" style="height: 92px">
+                <div class="title text-center text-sm-left px-3 py-0">
+                    <h1 class="m-0 text-bold"><span style="color: #4e4e4e;">
+                      Magnolia Pasteurized Milk
+
+                        </span></h1>
+                    <h3 class="m-0"><span style="color: #4e4e4e;">นมโคสดแท้ 100% หอม มัน อร่อย</span></h3>
+                </div>
+            </div>
+          </div>
+       
+    
+          
+     
+    
+        <div class="container"> 
+            
+                <div id="teapotex" class="tabcontent w3-animate-opacity"></div>
+         
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5">
+                            <img class="img-fluid" src="img/PRODUCT/Magnolia pasturize/นม.png" style="height: 100%" style="width:100%;">
+                        </div>
+                        <div class="col-sm-12 col-md-7">
+                            <div class="title text-sm-left px-3 py-0">
+                            
+                                
+                                <h2 class="m-0 text-bold"><span style="color: black;">Magnolia Pasteurized Milk</span>
+                                    <br>
+                                   </h2>
+                               
+                                <h3 class="m-0"><span style="color: #4e4e4e;"> 
+                                    
+                                    นมโคสดแท้ 100% หอม มัน อร่อย
+<br>
+<br>
+ผลิตจากนมโคสดแท้ 100% รสชาติอร่อย หอม มัน ไม่มีกลิ่นคาว ดื่มง่าย มีแคลเซียมสูงช่วยในกระบวนการสร้างกระดูก และฟันให้แข็งแรง ผลิตด้วยกระบวนการฆ่าเชื้อแบบพาสเจอร์ไรส์จึงคงคุณค่าสารอาหารที่มีประโยชน์แก่ร่างกาย
+<br>
+<br>
+มีให้เลือกดื่ม 2 สูตร คือ สูตรปกติ เหมาะสำหรับทุกคนในครอบครัว และสูตรไขมันต่ำ สำหรับผู้ที่ห่วงใยสุขภาพเป็นพิเศษ
+<br>
+<br>
+นมแมกโนเลีย พาสเจอร์ไรส์ มี 3 ขนาดให้เลือก คือ 800 มล., 2 ลิตร และ 5 ลิตร
+                                </span></h3>
+                            </div>
+                        </div>
+                        
+                      </div> 
+                      <div class="row">
+                        <span style="color: #4e4e4e;"><a href="teapot.html"><h6># Magnolia ,</h6></a></span>
+                        <span style="color: #4e4e4e;"><a href="teapot.html"><h6>Magnolia Pasteurized Milk ,</h6></a></span>
+                        <span style="color: #4e4e4e;"><a href="teapot.html"><h6>นมโคสดแท้ 100%</h6></a></span>
+                  
+                      </div>
+        </div>
+        </div>
+      
+        </div>
+       
+          
+        
+        </div>
+          
+         
+    
+          <div class="container">
+            <h1 class="title">
+                <span style="color: #8fc14e;">Shop</span>
+                <span style="color: #4e4e4e;">Online</span>
+            </h1>
+        
+            <div class="row justify-content-center align-items-center flex-md-row flex-column mt-3">
+              
+              <div class="col-sm-3 col-lg-2 ">
+                 
+                <img class="img-fluid" src="img/PRODUCT/TEAPOT/teapotLOGObigbig.png" style="height: 165px; width: 165px;">
+              </div>
+              <div class="col-sm-3 col-lg-2 col-xs-12">
+                <br>
+                <br>
+                <h1 class="title"><span style="color: #4e4e4e;">TEAPOT</span></h1>
+    
+              </div>
+              
+            <div class="col-sm-12 col-lg-8">
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-lg-3">
+                            <div class="card-body ">
+                                <div>
+                                <a class="nav-link  w3-card-2" href="https://shoponline.tescolotus.com/groceries/th-TH/search?query=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
+                                    <img src="img/PRODUCT/TEAPOT/lotus.png" style="max-height:100%; max-width: 100%; min-width: 100%; min-height: 100%;">
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-lg-3">
+                            <div class="card-body ">
+                                <div>
+                                <a class="nav-link  w3-card-2" href="https://shoponline.tescolotus.com/groceries/th-TH/search?query=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
+                                    <img src="img/PRODUCT/TEAPOT/lotus.png" style="max-height:100%; max-width: 100%; min-width: 100%; min-height: 100%;">
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-lg-3">
+                            <div class="card-body ">
+                                <div>
+                                <a class="nav-link  w3-card-2" href="https://shoponline.tescolotus.com/groceries/th-TH/search?query=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
+                                    <img src="img/PRODUCT/TEAPOT/lotus.png" style="max-height:100%; max-width: 100%; min-width: 100%; min-height: 100%;">
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 col-lg-3">
+                            <div class="card-body ">
+                                <div>
+                                <a class="nav-link  w3-card-2" href="https://shoponline.tescolotus.com/groceries/th-TH/search?query=%E0%B8%97%E0%B8%B5%E0%B8%9E%E0%B8%AD%E0%B8%97">
+                                    <img src="img/PRODUCT/TEAPOT/lotus.png" style="max-height:100%; max-width: 100%; min-width: 100%; min-height: 100%;">
+                                  </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="container">
+            <h1 class="title">
+                <span style="color: #8fc14e;"> Magnolia Plus Ginkgo </span>
+                <span style="color: #4e4e4e;">New Release</span>
+            </h1>
+            <div id="two" class="owl-carousel owl-theme mb-3 owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                    style="transform: translate3d(-2260px, 0px, 0px); transition: all 0s ease 0s; width: 7534px;">
+                    <div class="owl-item " style="border-bottom:1px #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewGrilledEgg.jpg">
+                        <h6 class="tag">
+                          Recipe
+                        </h6>
+                        <p class="description">
+                          Grilled Eggplant and Chicken Salad Rolls
+                        </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewWholeGrain.jpg">
+                        <h6 class="tag">
+                           Recipe
+                         </h6>
+                         <p class="description">
+                           Wholle Grain Rice with Chicken Stroganoff
+                         </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px  #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewCaramelPopcorn.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                Caramel Popcorn Milkshake
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px  #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewGrilledSalmon.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                Grilled Salmon with While Sauce
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px  #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewMochaMilk.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                Mocha Milk Block
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewSaltedEgg.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                Salted Egg Yolk Prawns Pasta
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px  #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewBeetroot.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                Beetroot and Dargon Fruit Smoothie
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px  #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/NewBakeSpinach.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                Baked Spinach With Cheese Bread
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #1cb14e solid;"><img class="img-fluid mb-2"
+                            src="img/PRODUCT/Magnolia Plus Lactose/Newกล้วยบวชชี.jpg">
+                            <h6 class="tag">
+                                Recipe
+                              </h6>
+                              <p class="description">
+                                ไอศกรีมกล้วยบวชชี
+                              </p>
+                    </div>
+                    <div class="owl-item " style="border-bottom:1px #1cb14e solid;"><img class="img-fluid mb-2"
+                        src="img/PRODUCT/Magnolia Plus Lactose/Newทองม้วน.jpg">
+                        <h6 class="tag">
+                            Recipe
+                          </h6>
+                          <p class="description">
+                            ทองม้วนสดรสช็อคมอลต์
+                          </p>
+                </div>
+                       
+                    </div>
+                </div>
+            </div>
+    
+    
+            </div>
+        </div>
+            <script>
+                $(document).ready(function () {
+                    $(".owl-carousel").owlCarousel({
+                        item:9,
+                        margin:90,
+                        nav:false,
+                        dots:false,
+                        rtl: false,
+                        loop:true,
+                        autoplay:true,
+                        
+                        responsiveClass: true,
+                        responsive: {
+    
+                            1000: {
+                                items: 3,
+                                nav: false,
+                                dots: false
+                            }, 600: {
+                                items: 1,
+                                nav: false,
+                                dots: false,
+                            }, 0: {
+                                items: 1,
+                                nav: false,
+                                dot: true,
+                            }
+                        }
+                        
+                    });
+                    $( ".owl-prev").html('<i style="  color: #acacac; font-size: 14px; outline: none;" class="fa fa-chevron-left"></i>');
+                    $( ".owl-next").html('<i style=" color: #acacac; font-size: 14px; outline: none;" class="fa fa-chevron-right"></i>');
+                });
+    
+    
+    
+            </script>
+    </body>
+    </html>
+    
