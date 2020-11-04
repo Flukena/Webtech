@@ -350,4 +350,9 @@ font-weight: bold;
   width: 30px;
   height: 30px;
   margin-bottom: 10px;
+}.links{
+  color: #c3c3c3;
+}.links.active{
+  color: #4e4e4e;
+
 }
