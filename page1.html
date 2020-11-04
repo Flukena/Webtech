@@ -649,8 +649,8 @@
                 &nbsp;
             </div>
             <div class="container-fluid" style="border-bottom: 1px solid #eee;"></div>
-
-            <div class="container tabcontent active" id="page1" style="display: none;">
+            <!-- 
+            <div class="container page1">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <img class="img-food mb-2" src="img/Food/การพาสเจอไรส์ (Pasteurization).jpg" alt="">
@@ -699,9 +699,9 @@
 
                 </div>
 
-            </div>
+            </div> -->
 
-            <div class="container tabcontent active" id="page2" style="display: none;">
+            <div class="container page2">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
                         <img class="img-food mb-2" src="img/Food/เนื้อไก่อาหารธรรมดาที่น่ารู้.jpg" alt="">
@@ -726,24 +726,27 @@
 
 
             </div>
+            <div style="justify-content: center; display: flex;">
+                <ul class="pagination" role="navigation">
 
-           <div style="display: flex; justify-content: center;"> 
-            <button class="link-btn tablinks " onclick="check('prev', 'page1')" aria-hidden="true">‹</button>
+                    <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+                        <span class="page-link" aria-hidden="true">‹</span>
+                    </li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="foodapp.html"></a>1</A></li>
+                    <li class="page-item"><a class="page-link" href="page1.html">2</a>
+                    </li>
 
-            <button class="link link1 tablinks active" onclick="showtab(event, 'page1')" id="link1">1</button>
-            <button class="link link2 tablinks" onclick="showtab(event, 'page2')" id="link2">2</button>
 
-            
-            <button class="link-btn tablinks" rel="next" onclick="check('next', 'page2')"
-                aria-label="Next »">›</button>
+                    <li class="page-item">
+                        <a class="page-link" href="page1.html" rel="next" aria-label="Next »">›</a>
+                    </li>
+                </ul>
+
             </div>
-
-
-
         </div>
     </div>
     <script>
-        $('.link').click(function (e) {
+        $('.page-link').click(function (e) {
             e.preventDefault()
             $.get($(this).attr('href'), function (res) {
                 $('.' + res.el).html(res.data)
@@ -753,7 +756,6 @@
         function showtab(evt, tabname) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
-            console.log(tabcontent);
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
             }
@@ -763,22 +765,11 @@
             }
             document.getElementById(tabname).style.display = "block";
             evt.currentTarget.className += " active";
-        }function check(evt ,tabname){
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(tabname).style.display = "block";
-            if(evt == 'prev'){
-                document.getElementById('link1').className += ' active';
-
-            }else{
-                document.getElementById('link2').className += ' active';
-
-            }
         }
+
+
+        document.getElementById("defaultOpen").click();
     </script>
-    
     <script>
         $(document).ready(function () {
             $("#one").owlCarousel({
