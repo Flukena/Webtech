@@ -292,7 +292,32 @@ font-weight: bold;
 }.img-food{
   width: 100%;
   vertical-align: middle;
-  border-style: none;
-  
-  
+  border-style: none;  
+}.text{
+  position: absolute;
+  display: inline-block;
+  color: #acacac;
+  padding: 0.1rem 0.75rem;
+
+}.text{
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-radius: 0.25rem;
+  background-color: #eee;
+  color: #acacac;
+  right: 0;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: 0.1rem 0.75rem;
+  -webkit-transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
+  transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
+}.text:hover{
+  background-color: #8fc14e;
+  color:white;
 }
