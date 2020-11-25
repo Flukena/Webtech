@@ -321,10 +321,8 @@ font-weight: bold;
   padding: 0.1rem 0.75rem;
   -webkit-transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
   transition: all 0.3s cubic-bezier(0.98, 0.01, 0.14, 0.99);
-}.text:hover{
-  background-color: #8fc14e;
-  color:white;
-}div .link{
+}
+div .link{
   border-radius: 100px;
   position: relative;
   display: block;
@@ -385,11 +383,25 @@ font-weight: bold;
   padding: 15px 6%;
   color: #ffffff;
   width: 40vw;
-  background: -webkit-gradient(linear, left top, right top, from(#8fc14e), color-stop(43%, rgba(143, 193, 78, 0.674107)), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(90deg, #8fc14e 0%, rgba(143, 193, 78, 0.674107) 43%, rgba(255, 255, 255, 0) 100%);
 }
 @media only screen and (min-width: 0px) {
   .bg-font  {
     font-size: 2vw;
   }
+}.links  {
+  color:  #a39494;
+background-color: inherit;
+float: center;
+border: none;
+outline: none;
+cursor: pointer;
+transition: 0.3s;
+font-size: 23px;
+}.tran{
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
